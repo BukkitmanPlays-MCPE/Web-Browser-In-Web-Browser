@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Web Browser in Web Browser</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="data.js"></script>
+	</head>
+	<body style="margin: 0px;" onload="update();">
+		<div id="browser">
+			<div id="top">
+
+				<!-- First Layer -->
+				<div id="tabs">
+					<tab></tab>
+				</div>
+				<br /><!-- Second Layer --> <hr />
+				&#160;
+				<button id="back">&#60;</button>
+				<button id="forward">&#62;</button>
+				<button id="home">H</button>
+
+				<input id="searchbar" style="width: 1107px;" />
+				<button id="enter" onclick="openPage(link)">Ent</button>
+
+				<button id="dropdown" onclick="enableMore();"> : </button>
+
+				<div id="more" style="display: none;">
+
+					<!-- This is all one button, and it was hard! -->
+					<label for="themes" class="button">Upload CSS Theme</label>
+  					<input id="themes" style="display: none;" type="file" />
+  					<!-- End of the button -->
+				</div>
+			</div>
+			<hr id="splitter"/>
+			<script src="browserSearching.js"></script>
+		</div id="browser">
+	</body>
+</html>
