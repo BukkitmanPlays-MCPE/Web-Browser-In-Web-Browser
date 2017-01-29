@@ -51,6 +51,6 @@ function update() {
 }
 
 function openPage(page) {
-	document.cookie = "Page=" + link.value;
+	document.cookie = link.value;
 	window.open("index.html", "_self", false);
 }
