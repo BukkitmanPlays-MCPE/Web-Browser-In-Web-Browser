@@ -22,8 +22,8 @@ if (document.cookie != "") {
 	link = "browser.html"
 }
 
-webPage.width = 1277.5;
-webPage.height = 640;
+webPage.width = "100%";
+webPage.height = "100%";
 webPage.src = link;
 webPage.style = "border-width: 0px;";
 
